@@ -1,0 +1,42 @@
+{
+  "name": "reddit-analytics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server",
+    "heroku-postbuild": "cd react-ui/ && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+  },
+  "cacheDirectories": [
+    "node_modules",
+    "react-ui/node_modules"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henryparker/reddit-analytics.git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "create-react-app",
+    "react"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/henryparker/reddit-analytics/issues"
+  },
+  "homepage": "https://github.com/henryparker/reddit-analytics#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "cookie-session": "^2.0.0-beta.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "http-proxy-middleware": "^0.19.1",
+    "mongoose": "^5.3.15",
+    "passport": "^0.4.0",
+    "passport-google-oauth20": "^1.0.0"
+  }
+}
