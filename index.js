@@ -30,6 +30,6 @@ app.use(passport.session());
 require('./routes/authRoute')(app);
 require('./routes/chartRoute')(app);
 require('./routes/campaignRoute')(app);
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 console.log("server running on ",PORT)
-app.listen(PORT,'192.168.1.144');
+app.listen(PORT);

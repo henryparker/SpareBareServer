@@ -4,18 +4,18 @@ const mongoose = require('mongoose');
 const User = mongoose.model('users');
 module.exports = app =>{
     app.post('/auth/newUser',async(req,res)=>{
-        // const existingUser = await User.findOne({ FacebookID: req.body.id });
+        const existingUser = await User.findOne({ FacebookID: req.body.id });
   
-        // if (!existingUser) {
-        //     const user = await new User({
-        //         FacebookID: req.body.id,
-        //         name: req.body.name,
-        //         birthday:req.body.birthday,
-        //         email:req.body.email,
-        //         picture:req.body.picture
-        //     }).save();
-        //     console.log(User);
-        // }
+        if (!existingUser) {
+            const user = await new User({
+                FacebookID: req.body.id,
+                name: req.body.name,
+                birthday:req.body.birthday,
+                email:req.body.email,
+                picture:req.body.picture
+            }).save();
+            console.log(User);
+        }
         console.log(req.body)
 
     })
