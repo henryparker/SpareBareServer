@@ -14,14 +14,17 @@ module.exports = app =>{
                 email:req.body.email,
                 picture:req.body.picture
             }).save();
-            console.log(User);
+            res.json(user)
+        }else{
+            res.json(existingUser)
         }
-        console.log(req.body)
+        
 
     })
 
     app.get('/tmp',async(req,res)=>{
-        res.send("I am your father")
+        console.log("HI")
+        res.json({"name":"I am your father"})
     })
     // app.get('/auth/google',
     //     passport.authenticate('google',{
