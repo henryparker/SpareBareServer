@@ -1,19 +1,11 @@
 {
-  "name": "reddit-analytics",
+  "name": "spare-bare-app-server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
-  },
-  "cacheDirectories": [
-    "node_modules",
-    "react-ui/node_modules"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/henryparker/reddit-analytics.git"
   },
   "keywords": [
     "node",
@@ -23,10 +15,6 @@
   ],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/henryparker/reddit-analytics/issues"
-  },
-  "homepage": "https://github.com/henryparker/reddit-analytics#readme",
   "dependencies": {
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
