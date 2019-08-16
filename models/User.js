@@ -1,13 +1,15 @@
-const mongoose = require('mongoose');
-const {Schema} = mongoose;
+const mongoose = require("mongoose");
+const { Schema } = mongoose;
 
-const userSchema = new Schema({
+const userSchema = new Schema(
+  {
     FacebookID: String,
-    name:String,
+    name: String,
     birthday: Date,
     email: String,
-    picture:Object
+    picture: Object
+  },
+  { strict: false }
+);
 
-},{strict:false})
-
-mongoose.model('users', userSchema);
+mongoose.model("users", userSchema);

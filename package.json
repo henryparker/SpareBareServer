@@ -24,10 +24,14 @@
     "http-proxy-middleware": "^0.19.1",
     "moment": "^2.24.0",
     "mongoose": "^5.3.15",
+    "mongoose-float": "^1.0.3",
     "passport": "^0.4.0",
     "passport-google-oauth20": "^1.0.0",
     "plaid": "^2.10.0",
     "query-string": "^6.2.0",
     "react-native-action-button": "^2.8.5"
+  },
+  "devDependencies": {
+    "prettier": "1.18.2"
   }
 }
